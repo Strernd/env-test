@@ -1,10 +1,10 @@
 "use server";
-function getBaseUrl() {
+async function getBaseUrl() {
   return process.env.APP_BASE_URL;
 }
 
-export default function Home() {
-  const baseUrl = getBaseUrl();
+export default async function Home() {
+  const baseUrl = await getBaseUrl();
   return (
     <div>
       <p>APP_BASE_URL: ${baseUrl}</p>

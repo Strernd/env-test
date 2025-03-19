@@ -7,7 +7,7 @@ export default async function Home() {
   const baseUrl = await getBaseUrl();
   return (
     <div>
-      <p>APP_BASE_URL: ${baseUrl}</p>
+      <p>APP_BASE_URL: {baseUrl}</p>
     </div>
   );
 }
